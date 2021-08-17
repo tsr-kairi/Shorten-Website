@@ -39,6 +39,10 @@
       width: 100%;
       display: flex;
       padding: 0 5rem;
+
+      @media (max-width: 768px) {
+        padding: 2.7rem;
+      }
     }
 
     .header {
@@ -57,8 +61,8 @@
         width: 100%;
       }
 
-      .header-logo {
-        .logo-img {
+      .logo-menu {
+        svg {
           color: #fff;
         }
       }
@@ -147,6 +151,9 @@
             cursor: pointer;
           }
         }
+        .active-ham {
+          display: block !important;
+        }
         .hamburger {
           display: none;
           @media (max-width: 768px) {
@@ -161,7 +168,9 @@
             left: 0;
             opacity: 1;
             transition: all 0.5s ease;
-            padding: 3rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            padding-top: 1rem;
             left: 0;
             right: 0;
             bottom: 0;
@@ -188,7 +197,7 @@
                 height: 1px;
                 background: gray;
                 width: 100%;
-                margin-top: 2rem;
+                margin-top: 3rem;
                 margin-bottom: 2rem;
               }
               .hamburger-link {
